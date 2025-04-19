@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="../assets/css/userDashboard.css">
+    <link rel="stylesheet" href="../assets/css/adminDashboard.css">
+    <link rel="stylesheet" href="../assets/css/table.css">
+    <link rel="stylesheet" href="../assets/css/categoryTags.css">
+    <link rel="stylesheet" href="../assets/css/global.css">
+</head>
+
+<body>
+    <div class="container">
+    
+        <div class="sidebar">
+            <h2>Admin Dashboard</h2>
+            <p id="username">Admin Name: <span id="username-container"></span></p>
+            <button id="credit-requests-btn" class="btn">Credit Requests</button>
+            <button id="user-stats-btn" class="btn">User Statistics</button>
+            <button id="content-trends-btn" class="btn">Content Trends</button>
+            <button id="logout" class="btn">Logout</button>
+        </div>
+
+        
+        <div class="main-content" >
+            <section id="credit-request-section" style="height: fit-content; margin-top: 15px;">
+                <div class="credit-request-section">
+                    <h3>Pending Credit Requests</h3>
+                    <div id="card-container">
+                        <p>You will see pending requests here if any. Currently you have no pending requests</p>
+                    </div>
+                </div>
+            </section>
+            
+
+            <div class="divider"></div>
+            <section id="user-stats-section" style="height: fit-content; margin-top: 15px;">
+                <div class="user-stats-section">
+                    <h3>User Statistics</h3>
+                    <p>See the top users by credit usage and track each user.</p>
+                </div>
+            </section>
+            <div class="divider"></div>
+            <section id="content-trends-section" style="height: fit-content; margin-top: 15px;">
+                <div class="content-trends-section">
+                    <h3>Content Trends</h3>
+                    <p>View the most common scan topics amongst the users.</p>
+                    <div id="category-tags-container" class="category-tags-container">
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="/assets/js/adminDashboardActions.js"></script>
+    <script src="/assets/js/utils.js"></script>
+
+</body>
+
+</html>

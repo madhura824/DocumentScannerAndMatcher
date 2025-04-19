@@ -1,0 +1,220 @@
+
+
+.container {
+    display: flex;
+    max-width: screen;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 80%;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+
+.sidebar {
+    width: 280px;
+    background-color: #0066cc;
+    color: #fff;
+    padding: 30px;
+    border-radius: 12px 0 0 12px;
+    box-shadow: 2px 0px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.sidebar h2 {
+    font-size: 1.75rem;
+    margin-bottom: 20px;
+}
+
+.sidebar p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.sidebar button {
+    width: 100%;
+    padding: 12px;
+    background-color: #005bb5;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.sidebar button:hover {
+    background-color: #004a99;
+}
+
+.sidebar button:focus {
+    outline: none;
+}
+
+
+.main-content {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.upload-section {
+    background-color: #f7f9fc;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.upload-section h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.upload-section .file-input,
+.upload-section .category-input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    color: #333;
+    margin-bottom: 10px;
+    transition: border-color 0.3s ease;
+}
+
+.upload-section .file-input:focus,
+.upload-section .category-input:focus {
+    border-color: #005bb5;
+    outline: none;
+}
+
+.upload-section .category-input::placeholder {
+    color: #999;
+}
+
+.upload-section .category-note {
+    font-size: 0.875rem;
+    color: #666;
+    text-align: start;
+    margin-top: 5px;
+}
+.sidebar .credits-requested-note{
+    font-size: 0.875rem;
+    color: #f1d83a;
+    text-align: start;
+    margin-top: 5px;
+    display: block;
+}
+
+
+.upload-section .error-message {
+    font-size: 0.875rem;
+    color: #f63d3d; 
+    text-align: start;
+    
+    margin-top: 10px;
+    width: 100%;
+}
+
+.upload-section .btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #0066cc;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.upload-section .btn:hover {
+    background-color: #005bb5;
+}
+
+
+.documents-section {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-top: 20px;
+}
+
+.documents-section h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.documents-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.documents-section li {
+    background-color: #f1f1f1;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.documents-section li h4 {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.documents-section li p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.documents-section li .document-category {
+    font-size: 0.875rem;
+    color: #005bb5;
+}
+
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .sidebar {
+        width: 100%;
+        border-radius: 12px 12px 0 0;
+        margin-bottom: 30px;
+    }
+
+    .main-content {
+        padding: 20px;
+    }
+
+    .upload-section,
+    .documents-section {
+        padding: 20px;
+    }
+
+    .upload-section .file-input,
+    .upload-section .category-input {
+        margin-bottom: 15px;
+    }
+}

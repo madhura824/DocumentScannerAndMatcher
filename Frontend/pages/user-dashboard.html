@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="../assets/css/userDashboard.css">
+    <link rel="stylesheet" href="../assets/css/global.css">
+</head>
+
+<body>
+    <div class="container">
+       
+        <div class="sidebar">
+            <h2>User Dashboard</h2>
+            <p id="username">Username: <span id="username-container"></span></p>
+            <p id="credits">Credits Left: <span id="credits-container"></span></p>
+            <button id="request-credits" class="btn" onclick="onRequestCredits()">Request More Credits</button>
+            <p class="credits-requested-note" id="credits-requested-note"> </p>
+            <button id="request-credits" class="btn" onclick="onDownloadReport()">Download Report</button>
+
+            <button id="logout" class="btn">Logout</button>
+        </div>
+
+     
+        <div class="main-content">
+            <div class="upload-section">
+                <h3>Upload Document</h3>
+                <input type="file" id="file-upload" class="file-input" accept=".txt">
+                <p id="file-error" class="error-message" style="font-size: smaller;"></p>
+                <p id=""  style="font-size: smaller;">Upload text (.txt) file only</p>
+
+                <input type="text" id="category-input" class="category-input"
+                    placeholder="Category (e.g. research, school, work)">
+                <p id="category-error" class="error-message" style="font-size: smaller;"></p>
+                <p class="category-note">Please provide a one-word category (e.g., research, school, work).</p>
+                <button class="btn" id="upload-btn" onclick="uploadDocument()">Upload</button>
+
+            </div>
+
+            <div class="documents-section">
+                <h4>Document Analysis of Similarity</h4>
+                <p  id="document-note">You will see a list of similar documents here, one you upload a document.</p>
+
+                <ul id="documents-list">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="/assets/js/userDashboardActions.js"></script>
+    <script src="/assets/js/documentAction.js"></script>
+    <script src="/assets/js/utils.js"></script>
+
+</body>
+
+</html>

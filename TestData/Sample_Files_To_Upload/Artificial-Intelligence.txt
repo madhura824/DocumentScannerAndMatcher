@@ -1,0 +1,5 @@
+Artificial Intelligence (AI) refers to the simulation of human intelligence in machines, enabling them to learn, reason, and solve problems.
+AI encompasses various technologies like machine learning, deep learning, and natural language processing to process data and make decisions.
+It is widely used in applications such as chatbots, autonomous vehicles, recommendation systems, and healthcare diagnostics.
+AI can be categorized into narrow AI (specialized tasks) and general AI (human-like intelligence, still theoretical).
+While AI offers immense benefits, it also raises concerns about ethics, job displacement, and bias in decision-making.
